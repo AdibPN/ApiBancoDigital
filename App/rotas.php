@@ -11,23 +11,23 @@ $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 switch($parse_uri) {
 
     case '/correntista/save':
-    //    CorrentistaController::getLogradouroByCep();
+    //    CorrentistaController::save();
     break;
 
     case '/contra/extrato';
-    //    CorrentistaController::getLogradouroByCep();
+    //    ContaController::extrato();
     break;
 
     case '/conta/pix/enviar';
-    //    CorrentistaController::getLogradouroByCep();
+    //    ContaController::enviarpix();
     break;
 
     case'/conta/pix/receber';
-    //    CorrentistaController::getLogradouroByCep();
+    //    ContaController::receberpix();
     break;
 
     case '/correntista/entrar';
-    //    CorrentistaController::getLogradouroByCep();
+    //    CorrentistaController::entrar();
     break;
 
     
