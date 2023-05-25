@@ -9,14 +9,15 @@ class CorrentistaModel extends Model {
 	public $cpf;
 	public $senha;
 
-	public function save() 
-	{
-		if($this->id == null)
-            (new CorrentistaDAO())->insert($this);
-        else
-            (new CorrentistaDAO())->update($this);
+	public function save() : ?CorrentistaModel
+    {
+        return (new CorrentistaDAO())->save($this);     
+    }
 
-	}
+	public function getByCpfAndSenha($cpf, $senha) : CorrentistaModel
+    {      
+        return (new CorrentistaDAO())->selectByCpfAndSenha($cpf, $senha);
+    }
 
 	public function getAllRows() 
 	{

@@ -1,0 +1,7 @@
+#0 C:\Users\Usuario\Desktop\ApiBancoDigital\App\DAO\DAO.php(11): PDO->__construct('mysql:host=192....', 'codeflame', 'codeflamepw')
+#1 C:\Users\Usuario\Desktop\ApiBancoDigital\App\DAO\CorrentistaDAO.php(11): App\DAO\DAO->__construct()
+#2 C:\Users\Usuario\Desktop\ApiBancoDigital\App\Model\CorrentistaModel.php(14): App\DAO\CorrentistaDAO->__construct()
+#3 C:\Users\Usuario\Desktop\ApiBancoDigital\App\Controller\CorrentistaController.php(28): App\Model\CorrentistaModel->save()
+#4 C:\Users\Usuario\Desktop\ApiBancoDigital\App\rotas.php(14): App\Controller\CorrentistaController::salvar()
+#5 C:\Users\Usuario\Desktop\ApiBancoDigital\App\index.php(6): include('C:\\Users\\Usuari...')
+#6 {main}

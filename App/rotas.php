@@ -10,8 +10,8 @@ $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($parse_uri) {
 
-    case '/correntista/save':
-    //    CorrentistaController::save();
+    case '/correntista/salvar':
+        CorrentistaController::salvar();
     break;
 
     case '/contra/extrato';
@@ -27,7 +27,7 @@ switch($parse_uri) {
     break;
 
     case '/correntista/entrar';
-    //    CorrentistaController::entrar();
+        CorrentistaController::login();
     break;
 
     

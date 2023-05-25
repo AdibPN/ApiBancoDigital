@@ -14,6 +14,11 @@ abstract class Controller {
         exit(json_encode($data));
     }
 
+    protected static function LogError(Exception $e)
+    {
+        $f = fopen("erros.txt", "w");
+        fwrite($f, $e->getTraceAsString());
+    }
     protected static function setResponseAsJSON($data, $request_data = true) {
         $response = array('response_data' => $data, 'response_successful' => $request_data);
         
