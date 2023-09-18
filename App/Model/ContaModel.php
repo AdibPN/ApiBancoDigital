@@ -30,8 +30,11 @@ class ContaModel extends Model {
 
 	}
 
-	public function getAllRows() 
+	public function getAllRows(int $id_cidadao) 
 	{
+
+		$dao = new ContaDAO();
+		$this->rows = $dao->select($id_cidadao);
 
 	}
 

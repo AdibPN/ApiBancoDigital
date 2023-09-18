@@ -21,4 +21,14 @@ class ContaController extends Controller {
 	{
 
 	}
+
+	public static function extrato()
+    {
+        
+    }
+
+	public static function abrir()
+    {
+
+    }
 }
